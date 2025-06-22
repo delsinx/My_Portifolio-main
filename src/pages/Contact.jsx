@@ -138,7 +138,18 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                 Envie uma Mensagem
               </h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-6"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                netlify-honeypot="bot-field"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+                <div hidden>
+                  <input name="bot-field" />
+                </div>
                 <div>
                   <label
                     htmlFor="name"
