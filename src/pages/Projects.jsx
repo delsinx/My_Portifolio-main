@@ -1,33 +1,54 @@
 import React, { useState } from 'react';
 
+// Cores para cada tecnologia
+const techColors = {
+  React: "bg-cyan-600",
+  Tailwind: "bg-teal-500",
+  "Java Script": "bg-yellow-500",
+  "html5 & css3": "bg-orange-500",
+  Java: "bg-red-700",
+  Spring: "bg-green-700",
+  "Spring Security": "bg-green-900",
+  MySQL: "bg-blue-700",
+  "Postgree SQL": "bg-indigo-700",
+  MongoDB: "bg-green-600",
+  "React Router": "bg-pink-600",
+  OCI: "bg-orange-700",
+  Azure: "bg-blue-900",
+  AWS: "bg-yellow-700",
+  default: "bg-gray-500"
+};
+
 const projects = [
   { 
     title: 'Meu portifolio', 
     video: '/background.mp4', 
     link: 'https://github.com/delsinx/My_Portifolio-main',
     description: 'Portfólio moderno e responsivo para exibir seus projetos com eficiência.',
-    technologies: ['React', 'Tailwind', 'Java Script', 'html5 & css3']
+    technologies: [
+      'React', 'Tailwind', 'Java Script', 'html5 & css3', 'React Router'
+    ]
   },
   { 
     title: 'Place holder titulo', 
     video: '/background.mp4', 
     link: 'place holder-link',
     description: 'Place holder descrição',
-    technologies: ['Place holder tecnologias']
-  },
-  { 
-    title: 'Place holder titulo', 
-    video: '/background.mp4', 
-link: 'place holder-link',
-    description: 'Place holder descrição',
-    technologies: ['Place holder tecnologias']
+    technologies: ['Java', 'Spring', 'Spring Security', 'MySQL', 'Postgree SQL', 'MongoDB', 'React Router', 'OCI', 'Azure', 'AWS']
   },
   { 
     title: 'Place holder titulo', 
     video: '/background.mp4', 
     link: 'place holder-link',
     description: 'Place holder descrição',
-    technologies: ['Place holder tecnologias']
+    technologies: ['React', 'Java Script', 'MongoDB', 'AWS']
+  },
+  { 
+    title: 'Place holder titulo', 
+    video: '/background.mp4', 
+    link: 'place holder-link',
+    description: 'Place holder descrição',
+    technologies: ['Tailwind', 'Java', 'MySQL', 'React Router', 'OCI']
   }
 ];
 
@@ -89,7 +110,7 @@ export default function Projects() {
                     {project.technologies.map((tech, index) => (
                       <span 
                         key={index}
-                        className="bg-blue-600 text-white text-sm px-3 py-1 rounded-full"
+                        className={`${techColors[tech] || techColors.default} text-black text-sm px-3 py-1 rounded-full`}
                       >
                         {tech}
                       </span>
@@ -110,34 +131,17 @@ export default function Projects() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center bg-gray-100 dark:bg-black dark:bg-opacity-30 rounded-lg p-8 mt-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-              Interessado em colaborar?
-            </h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              Estou sempre aberto a novos desafios e oportunidades de desenvolvimento. 
-              Entre em contato para discutirmos seu próximo projeto.
-            </p>
-            <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
-              <a 
-                href="https://github.com/delsinx" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2
-                  bg-transparent text-black border-black hover:bg-black hover:text-white
-                  dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white/10 dark:hover:text-white"
-              >
-                Ver mais no GitHub
-              </a>
-              <a 
-                href="https://www.linkedin.com/in/delsonaafilho/" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300"
-              >
-                Conectar no LinkedIn
-              </a>
-            </div>
+          <div className="text-center mt-8">
+            <a 
+              href="https://github.com/delsinx" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2
+                border-black text-black hover:bg-black hover:text-white
+                dark:border-white dark:text-white dark:hover:bg-white/10 dark:hover:text-white bg-transparent"
+            >
+              Ver mais no GitHub
+            </a>
           </div>
         </div>
       </div>
