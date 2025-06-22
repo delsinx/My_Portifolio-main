@@ -63,7 +63,8 @@ export default function Contact() {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-2xl p-8 max-w-sm w-full text-center">
             <h2 className="text-2xl font-bold mb-4 text-blue-600">Validação de Segurança</h2>
             <p className="mb-6 text-gray-700 dark:text-gray-200">
-              Por favor, resolva o captcha para enviar sua mensagem.
+               A função de envio de mensagem não está disponível no momento.<br />
+              Por favor, entre em contato diretamente pelo email.
             </p>
             <div className="flex justify-center mb-6">
               <ReCAPTCHA
