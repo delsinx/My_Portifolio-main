@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import {
   BsGithub,
   BsLinkedin,
@@ -17,6 +17,7 @@ export default function Contact() {
   const [showCaptcha, setShowCaptcha] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
   const [showSuccess, setShowSuccess] = useState(false);
+  const formRef = useRef();
 
   const handleChange = (e) => {
     setFormData({
@@ -34,16 +35,18 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Se o captcha ainda não foi resolvido, abre o card de captcha
     if (!captchaValue) {
       setShowCaptcha(true);
       return;
     }
-    // Se o captcha foi resolvido, envia o formulário normalmente
-    setShowSuccess(true);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-    setCaptchaValue(null);
+    // Se captcha ok, envia o form pelo Netlify
+    setTimeout(() => {
+      if (formRef.current) {
+        formRef.current.submit();
+      }
+    }, 0);
     setShowCaptcha(false);
+    setCaptchaValue(null);
   };
 
   const handleCaptchaChange = (value) => {
@@ -82,8 +85,10 @@ export default function Contact() {
                 onClick={() => {
                   if (captchaValue) {
                     setShowCaptcha(false);
-                    setShowSuccess(true);
-                    setFormData({ name: "", email: "", subject: "", message: "" });
+                    // dispara o submit real do form
+                    if (formRef.current) {
+                      formRef.current.submit();
+                    }
                     setCaptchaValue(null);
                   }
                 }}
@@ -223,13 +228,16 @@ export default function Contact() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                 Envie uma Mensagem
               </h2>
+              {/* Formulário Netlify */}
               <form
+                ref={formRef}
                 className="space-y-6"
                 name="contact"
                 method="POST"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 onSubmit={handleSubmit}
+                action="/success" // ou deixe sem para usar o modal de sucesso
               >
                 <input type="hidden" name="form-name" value="contact" />
                 <div hidden>
