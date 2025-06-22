@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className="relative w-full min-h-screen bg-gray-900 transition-colors duration-300">
+    <div className="relative w-full min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 transition-colors duration-300">
       {/* Video de background */}
       <video
         autoPlay
@@ -18,12 +18,12 @@ export default function Home() {
 
       <div className="relative z-10">
         {/* Home Section */}
-        <section className="text-center text-white pt-32 pb-16 bg-transparent min-h-screen flex flex-col justify-center items-center">
+        <section className="text-center pt-32 pb-16 bg-transparent min-h-screen flex flex-col justify-center items-center">
           <div className="max-w-4xl mx-auto px-4">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in text-gray-900 dark:text-white">
               Bem vindo ao meu Portfólio
             </h1>
-            <p className="text-xl md:text-3xl lg:text-4xl mb-8 text-gray-300">
+            <p className="text-xl md:text-3xl lg:text-4xl mb-8 text-gray-700 dark:text-gray-300">
               Back-end Developer
             </p>
             <div className="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
@@ -35,7 +35,7 @@ export default function Home() {
               </Link>
               <Link 
                 to="/technologies" 
-                className="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
+                className="inline-block bg-transparent border-2 border-gray-900 dark:border-white hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 text-gray-900 dark:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 Tecnologias
               </Link>
@@ -44,28 +44,28 @@ export default function Home() {
         </section>
 
         {/* About Section */}
-        <section className="bg-black bg-opacity-50 py-16 px-4">
+        <section className="bg-black bg-opacity-10 dark:bg-black dark:bg-opacity-50 py-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">Sobre Mim</h2>
-            <p className="text-lg md:text-xl text-gray-300 leading-relaxed mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 dark:text-white">Sobre Mim</h2>
+            <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
               Sou um desenvolvedor back-end em formação, com foco em Java e Spring. Tenho paixão por criar APIs RESTful robustas, escaláveis e bem estruturadas
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-              <div className="bg-black bg-opacity-30 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-4">Experiência</h3>
-                <p className="text-gray-300">
+              <div className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Experiência</h3>
+                <p className="text-gray-700 dark:text-gray-300">
                   Desenvolvimento de APIs RESTful, microserviços e integração de sistemas
                 </p>
               </div>
-              <div className="bg-black bg-opacity-30 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-4">Foco</h3>
-                <p className="text-gray-300">
+              <div className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Foco</h3>
+                <p className="text-gray-700 dark:text-gray-300">
                   Performance, escalabilidade e boas práticas de desenvolvimento
                 </p>
               </div>
-              <div className="bg-black bg-opacity-30 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-white mb-4">Objetivo</h3>
-                <p className="text-gray-300">
+              <div className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Objetivo</h3>
+                <p className="text-gray-700 dark:text-gray-300">
                   Criar soluções que impactem positivamente usuários e negócios
                 </p>
               </div>
@@ -74,21 +74,21 @@ export default function Home() {
         </section>
 
         {/* Courses Section */}
-        <section className="bg-black bg-opacity-40 py-12 px-4">
+        <section className="bg-black bg-opacity-20 dark:bg-black dark:bg-opacity-40 py-12 px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8">Cursos</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900 dark:text-white">Cursos</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
               <a
                 href="https://www.udemy.com/course/java-curso-completo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black bg-opacity-40 p-6 rounded-lg cursor-pointer hover:bg-gray-900 hover:scale-105 transition-all duration-300 block shadow-lg"
+                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-white hover:scale-105 transition-all duration-300 block shadow-lg"
                 style={{ transitionProperty: 'background, transform, box-shadow' }}
               >
-                <h3 className="text-xl font-semibold text-white mb-2">Java Completo</h3>
-                <p className="text-gray-300 text-sm mb-2">Udemy</p>
-                <p className="text-gray-400 text-xs mb-2">55h - Programação Orientada a Objetos, JDBC, Spring Boot</p>
-                <p className="text-green-400 text-xs font-semibold">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Java Completo</h3>
+                <p className="text-gray-700 dark:text-gray-300 text-sm mb-2">Udemy</p>
+                <p className="text-gray-500 dark:text-gray-400 text-xs mb-2">55h - Programação Orientada a Objetos, JDBC, Spring Boot</p>
+                <p className="text-green-600 dark:text-green-400 text-xs font-semibold">
                   Certificação: <span className="underline">[Adicionar link ou código]</span>
                 </p>
                 <a
@@ -104,13 +104,13 @@ export default function Home() {
                 href="https://cursos.alura.com.br/formacao-spring-framework"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black bg-opacity-40 p-6 rounded-lg cursor-pointer hover:bg-gray-900 hover:scale-105 transition-all duration-300 block shadow-lg"
+                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-white hover:scale-105 transition-all duration-300 block shadow-lg"
                 style={{ transitionProperty: 'background, transform, box-shadow' }}
               >
-                <h3 className="text-xl font-semibold text-white mb-2">Spring Framework</h3>
-                <p className="text-gray-300 text-sm mb-2">Alura</p>
-                <p className="text-gray-400 text-xs mb-2">40h - Spring Boot, JPA, REST APIs</p>
-                <p className="text-green-400 text-xs font-semibold">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Spring Framework</h3>
+                <p className="text-gray-700 dark:text-gray-300 text-sm mb-2">Alura</p>
+                <p className="text-gray-500 dark:text-gray-400 text-xs mb-2">40h - Spring Boot, JPA, REST APIs</p>
+                <p className="text-green-600 dark:text-green-400 text-xs font-semibold">
                   Certificação: <span className="underline">[Adicionar link ou código]</span>
                 </p>
                 <a
@@ -126,13 +126,13 @@ export default function Home() {
                 href="https://web.dio.me/track/formacao-sql-database-specialist"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black bg-opacity-40 p-6 rounded-lg cursor-pointer hover:bg-gray-900 hover:scale-105 transition-all duration-300 block shadow-lg"
+                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-white hover:scale-105 transition-all duration-300 block shadow-lg"
                 style={{ transitionProperty: 'background, transform, box-shadow' }}
               >
-                <h3 className="text-xl font-semibold text-white mb-2">Banco de Dados SQL</h3>
-                <p className="text-gray-300 text-sm mb-2">Digital Innovation One</p>
-                <p className="text-gray-400 text-xs mb-2">20h - Modelagem, consultas e integrações</p>
-                <p className="text-green-400 text-xs font-semibold">
+                <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Banco de Dados SQL</h3>
+                <p className="text-gray-700 dark:text-gray-300 text-sm mb-2">Digital Innovation One</p>
+                <p className="text-gray-500 dark:text-gray-400 text-xs mb-2">20h - Modelagem, consultas e integrações</p>
+                <p className="text-green-600 dark:text-green-400 text-xs font-semibold">
                   Certificação: <span className="underline">[Adicionar link ou código]</span>
                 </p>
                 <a
@@ -173,7 +173,7 @@ export default function Home() {
                 className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
                 title="JavaScript"
               >
-                <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="6" fill="#F7DF1E"/><path d="M21.5 23.5c.5.8 1.2 1.4 2.4 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6l-.6-.3c-1.7-.7-2.8-1.6-2.8-3.5 0-1.7 1.3-3 3.3-3 1.4 0 2.4.5 3.1 1.7l-1.7 1.1c-.4-.7-.8-1-1.4-1-.6 0-1 .4-1 .9 0 .6.4.9 1.3 1.3l.6.3c2 .9 3.1 1.7 3.1 3.6 0 2.1-1.7 3.2-4 3.2-2.2 0-3.5-1.1-4.2-2.5l1.8-1.1zm-8.2.2c.3.6.6 1.1 1.3 1.1.7 0 1.1-.3 1.1-1.4v-6.2h2.1v6.3c0 2.2-1.3 3.2-3.1 3.2-1.7 0-2.7-.9-3.2-2l1.8-1z" fill="#222"/></svg>
+                <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="6" fill="#F7DF1E"/><path d="M21.5 23.5c.5.8 1.2 1.4 2.4 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6l-.6-.3c-1.7-.7-2.8-1.6-2.8-3.5 0-1.7 1.3-3 3.3-3 1.4 0 2.4.5 3.1 1.7l-1.7 1.1c-.4-.7-.8-1-1.4-1-.6 0-1 .4-1 .9 0 .6.4.9 1.3 1.3l.6.3c2 .9 3.1 1.7 3.1 3.6 0 2.1-1.7 3.2-4 3.2-2.2 0-3.5-1.1-4.2-2.5l1.8-1zm-8.2.2c.3.6.6 1.1 1.3 1.1.7 0 1.1-.3 1.1-1.4v-6.2h2.1v6.3c0 2.2-1.3 3.2-3.1 3.2-1.7 0-2.7-.9-3.2-2l1.8-1z" fill="#222"/></svg>
                 JavaScript
               </a>
               <a

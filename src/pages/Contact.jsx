@@ -30,7 +30,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="relative w-full min-h-screen bg-gray-900 transition-colors duration-300">
+    <div className="relative w-full min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 transition-colors duration-300">
       {/* Video de background */}
       <video
         autoPlay
@@ -47,10 +47,10 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-6">
               Entre em Contato
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
               Estou sempre aberto a novas oportunidades e colaborações. Vamos
               conversar sobre seu próximo projeto!
             </p>
@@ -59,8 +59,8 @@ export default function Contact() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
             <div className="space-y-8">
-              <div className="bg-black bg-opacity-30 rounded-lg p-8">
-                <h2 className="text-2xl font-bold text-white mb-6">
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                   Informações de Contato
                 </h2>
                 <div className="space-y-6">
@@ -69,8 +69,8 @@ export default function Contact() {
                       <BsEnvelope className="text-white text-xl" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold">Email</h3>
-                      <p className="text-gray-300">
+                      <h3 className="text-gray-900 dark:text-gray-100 font-semibold">Email</h3>
+                      <p className="text-gray-700 dark:text-gray-300">
                         delson_filho@protonmail.com
                       </p>
                     </div>
@@ -80,14 +80,14 @@ export default function Contact() {
                       <BsGeoAlt className="text-white text-xl" />
                     </div>
                     <div>
-                      <h3 className="text-white font-semibold">Localização</h3>
-                      <p className="text-gray-300">Belo Horizonte, Brasil</p>
+                      <h3 className="text-gray-900 dark:text-gray-100 font-semibold">Localização</h3>
+                      <p className="text-gray-700 dark:text-gray-300">Belo Horizonte, Brasil</p>
                     </div>
                   </div>
                 </div>
                 {/* Social Links */}
-                <div className="mt-8 pt-8 border-t border-gray-700">
-                  <h3 className="text-white font-semibold mb-4">
+                <div className="mt-8 pt-8 border-t border-gray-300 dark:border-gray-700">
+                  <h3 className="text-gray-900 dark:text-gray-100 font-semibold mb-4">
                     Redes Sociais
                   </h3>
                   <div className="flex space-x-4">
@@ -95,9 +95,9 @@ export default function Contact() {
                       href="https://github.com/delsinx"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-gray-700 hover:bg-gray-600 p-3 rounded-full transition-colors duration-300"
+                      className="bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 p-3 rounded-full transition-colors duration-300"
                     >
-                      <BsGithub className="text-white text-xl" />
+                      <BsGithub className="text-gray-900 dark:text-gray-100 text-xl" />
                     </a>
                     <a
                       href="https://www.linkedin.com/in/delsonaafilho/"
@@ -112,20 +112,20 @@ export default function Contact() {
               </div>
 
               {/* Availability */}
-              <div className="bg-black bg-opacity-30 rounded-lg p-8">
-                <h2 className="text-2xl font-bold text-white mb-4">
+              <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-4">
                   Disponibilidade
                 </h2>
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
-                    <span className="text-gray-300">
+                    <span className="text-gray-700 dark:text-gray-300">
                       Disponível para projetos freelance
                     </span>
                   </div>
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                    <span className="text-gray-300">
+                    <span className="text-gray-700 dark:text-gray-300">
                       Aberto a oportunidades full-time
                     </span>
                   </div>
@@ -134,15 +134,15 @@ export default function Contact() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-black bg-opacity-30 rounded-lg p-8">
-              <h2 className="text-2xl font-bold text-white mb-6">
+            <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-8">
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                 Envie uma Mensagem
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label
                     htmlFor="name"
-                    className="block text-white font-semibold mb-2"
+                    className="block text-gray-900 dark:text-gray-100 font-semibold mb-2"
                   >
                     Nome *
                   </label>
@@ -153,14 +153,14 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
                     placeholder="Seu nome completo"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-white font-semibold mb-2"
+                    className="block text-gray-900 dark:text-gray-100 font-semibold mb-2"
                   >
                     Email *
                   </label>
@@ -171,14 +171,14 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
                     placeholder="seu@email.com"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-white font-semibold mb-2"
+                    className="block text-gray-900 dark:text-gray-100 font-semibold mb-2"
                   >
                     Assunto *
                   </label>
@@ -189,14 +189,14 @@ export default function Contact() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
+                    className="w-full px-4 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
                     placeholder="Assunto da mensagem"
                   />
                 </div>
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-white font-semibold mb-2"
+                    className="block text-gray-900 dark:text-gray-100 font-semibold mb-2"
                   >
                     Mensagem *
                   </label>
@@ -207,7 +207,7 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     rows="6"
-                    className="w-full px-4 py-3 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-vertical"
+                    className="w-full px-4 py-3 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300 resize-vertical"
                     placeholder="Descreva seu projeto ou dúvida..."
                   ></textarea>
                 </div>
@@ -227,18 +227,18 @@ export default function Contact() {
       </div>
 
       {/* Footer */}
-      <footer className="w-full bg-black bg-opacity-30 text-gray-300 py-6 mt-12 border-t border-gray-800 z-20 relative">
+      <footer className="w-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-6 mt-12 border-t border-gray-200 dark:border-gray-800 z-20 relative">
         <div className="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
           <span className="text-sm mb-2 md:mb-0">
             © {new Date().getFullYear()} Meu Portfólio. Todos os direitos reservados.
           </span>
           <div className="flex flex-wrap gap-4 items-center text-sm">
-            <span className="font-semibold text-white">Tecnologias:</span>
+            <span className="font-semibold text-gray-900 dark:text-gray-100">Tecnologias:</span>
             <a
               href="https://react.dev/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
+              className="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-900 rounded hover:bg-gray-200 dark:hover:bg-white transition-colors"
               title="React"
             >
               <svg width="18" height="18" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="20" rx="3" ry="3" fill="#61DAFB"/><ellipse cx="20" cy="20" rx="17" ry="7" stroke="#61DAFB" strokeWidth="2" fill="none"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#61DAFB" strokeWidth="2" fill="none" transform="rotate(60 20 20)"/><ellipse cx="20" cy="20" rx="7" ry="17" stroke="#61DAFB" strokeWidth="2" fill="none" transform="rotate(120 20 20)"/></svg>
@@ -248,7 +248,7 @@ export default function Contact() {
               href="https://developer.mozilla.org/docs/Web/JavaScript"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
+              className="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-900 rounded hover:bg-gray-200 dark:hover:bg-white transition-colors"
               title="JavaScript"
             >
               <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="6" fill="#F7DF1E"/><path d="M21.5 23.5c.5.8 1.2 1.4 2.4 1.4 1 0 1.6-.5 1.6-1.2 0-.8-.6-1.1-1.8-1.6l-.6-.3c-1.7-.7-2.8-1.6-2.8-3.5 0-1.7 1.3-3 3.3-3 1.4 0 2.4.5 3.1 1.7l-1.7 1.1c-.4-.7-.8-1-1.4-1-.6 0-1 .4-1 .9 0 .6.4.9 1.3 1.3l.6.3c2 .9 3.1 1.7 3.1 3.6 0 2.1-1.7 3.2-4 3.2-2.2 0-3.5-1.1-4.2-2.5l1.8-1.1zm-8.2.2c.3.6.6 1.1 1.3 1.1.7 0 1.1-.3 1.1-1.4v-6.2h2.1v6.3c0 2.2-1.3 3.2-3.1 3.2-1.7 0-2.7-.9-3.2-2l1.8-1z" fill="#222"/></svg>
@@ -258,7 +258,7 @@ export default function Contact() {
               href="https://tailwindcss.com/docs"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
+              className="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-900 rounded hover:bg-gray-200 dark:hover:bg-white transition-colors"
               title="Tailwind CSS"
             >
               <svg width="18" height="18" viewBox="0 0 48 48" fill="none"><path d="M13.5 23.5C15.5 18.5 19.5 16 25 16c7 0 10.5 4 10.5 12-2 5-6 7.5-12 7.5-7 0-10.5-4-10.5-12z" fill="#38BDF8"/><path d="M2.5 35.5C4.5 30.5 8.5 28 14 28c7 0 10.5 4 10.5 12-2 5-6 7.5-12 7.5-7 0-10.5-4-10.5-12z" fill="#38BDF8"/></svg>
@@ -268,7 +268,7 @@ export default function Contact() {
               href="https://reactrouter.com/en/main"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
+              className="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-900 rounded hover:bg-gray-200 dark:hover:bg-white transition-colors"
               title="React Router"
             >
               <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="16" fill="#CA4245"/><path d="M10 22c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="#fff" strokeWidth="2" fill="none"/><circle cx="16" cy="22" r="2" fill="#fff"/></svg>
@@ -278,7 +278,7 @@ export default function Contact() {
               href="https://developer.mozilla.org/docs/Web/HTML"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
+              className="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-900 rounded hover:bg-gray-200 dark:hover:bg-white transition-colors"
               title="HTML5"
             >
               <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><path d="M6 28L4 4h24l-2 24-10 4-10-4z" fill="#E44D26"/><path d="M16 27l8.1-2.9 1.7-19.1H16v22z" fill="#F16529"/><path d="M16 13h-4l.3 3h3.7v3h-3.3l.2 2h3.1v3.1l-2.7-.9-.2-2.2h-2.1l.4 4.1 6.6 2.3v-8.4zm0-5v3h7.1l-.2-2H16z" fill="#fff"/></svg>
@@ -288,7 +288,7 @@ export default function Contact() {
               href="https://developer.mozilla.org/docs/Web/CSS"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 px-2 py-1 bg-black bg-opacity-40 rounded hover:bg-gray-900 transition-colors"
+              className="flex items-center gap-1 px-2 py-1 bg-white dark:bg-gray-900 rounded hover:bg-gray-200 dark:hover:bg-white transition-colors"
               title="CSS3"
             >
               <svg width="18" height="18" viewBox="0 0 32 32" fill="none"><path d="M6 28L4 4h24l-2 24-10 4-10-4z" fill="#1572B6"/><path d="M16 27l8.1-2.9 1.7-19.1H16v22z" fill="#33AADD"/><path d="M16 13h-4l.3 3h3.7v3h-3.3l.2 2h3.1v3.1l-2.7-.9-.2-2.2h-2.1l.4 4.1 6.6 2.3v-8.4zm0-5v3h7.1l-.2-2H16z" fill="#fff"/></svg>
