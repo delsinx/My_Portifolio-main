@@ -87,10 +87,18 @@ export default function Home() {
               >
                 <h3 className="text-xl font-semibold text-white mb-2">Java Completo</h3>
                 <p className="text-gray-300 text-sm mb-2">Udemy</p>
-                <p className="text-gray-400 text-xs mb-2">80h - Programação Orientada a Objetos, JDBC, Spring Boot</p>
+                <p className="text-gray-400 text-xs mb-2">55h - Programação Orientada a Objetos, JDBC, Spring Boot</p>
                 <p className="text-green-400 text-xs font-semibold">
                   Certificação: <span className="underline">[Adicionar link ou código]</span>
                 </p>
+                <a
+                  href="https://www.udemy.com/course/java-curso-completo/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300"
+                >
+                  Ver Curso
+                </a>
               </a>
               <a
                 href="https://cursos.alura.com.br/formacao-spring-framework"
@@ -105,6 +113,14 @@ export default function Home() {
                 <p className="text-green-400 text-xs font-semibold">
                   Certificação: <span className="underline">[Adicionar link ou código]</span>
                 </p>
+                <a
+                  href="https://cursos.alura.com.br/formacao-spring-framework"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300"
+                >
+                  Ver Curso
+                </a>
               </a>
               <a
                 href="https://web.dio.me/track/formacao-sql-database-specialist"
@@ -119,6 +135,14 @@ export default function Home() {
                 <p className="text-green-400 text-xs font-semibold">
                   Certificação: <span className="underline">[Adicionar link ou código]</span>
                 </p>
+                <a
+                  href="https://web.dio.me/track/formacao-sql-database-specialist"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300"
+                >
+                  Ver Curso
+                </a>
               </a>
             </div>
           </div>
