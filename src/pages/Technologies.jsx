@@ -63,6 +63,13 @@ const techCategories = {
       link: 'https://git-scm.com/',
       level: 'Iniciante',
       description: 'Controle de versão e colaboração em equipe com workflows GitFlow.'
+    },
+    { 
+      name: 'Oracle OCI', 
+      img: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg', 
+      link: 'https://www.oracle.com/cloud/',
+      level: 'Iniciante',
+      description: 'Oracle Cloud Infrastructure (OCI) para deploy, automação e serviços em nuvem.'
     }
   ]
 };

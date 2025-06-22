@@ -5,7 +5,8 @@ const techs = [
   { name: 'Git', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg', link: 'https://git-scm.com/' },
   { name: 'MySQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg', link: 'https://www.mysql.com/' },
   { name: 'PostgreSQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', link: 'https://www.postgresql.org/' },
-  { name: 'NoSQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', link: 'https://www.mongodb.com/nosql-explained' }
+  { name: 'NoSQL', img: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg', link: 'https://www.mongodb.com/nosql-explained' },
+  { name: 'Oracle OCI', img: 'https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg', link: 'https://www.oracle.com/cloud/' }
 ];
 
 export default function Technologies() {
