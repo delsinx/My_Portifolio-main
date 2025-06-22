@@ -139,7 +139,6 @@ export default function Contact() {
                 Envie uma Mensagem
               </h2>
               <form
-                onSubmit={handleSubmit}
                 className="space-y-6"
                 name="contact"
                 method="POST"
