@@ -20,7 +20,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-20 bg-black bg-opacity-50 backdrop-blur-sm px-4 md:px-6 py-3">
+    <nav className="fixed top-0 left-0 w-full z-20 bg-black bg-opacity-30 backdrop-blur-sm px-4 md:px-6 py-3 border-b border-gray-800">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo/Brand */}
         <Link to="/" className="text-white font-bold text-xl md:text-2xl">
@@ -67,7 +67,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-sm flex flex-col items-center gap-6 py-6">
+        <div className="md:hidden absolute top-full left-0 w-full bg-black bg-opacity-95 backdrop-blur-sm flex flex-col items-center gap-6 py-6 border-b border-gray-800">
           <Link 
             to="/" 
             className={`${getLinkClass('/')} text-lg`}

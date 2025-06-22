@@ -4,30 +4,30 @@ const projects = [
   { 
     title: 'Meu portifolio', 
     video: '/background.mp4', 
-    link: 'https://github.com/delsinx/project1',
-    description: 'API completa para e-commerce com Spring Boot, incluindo autenticação, carrinho de compras e processamento de pagamentos.',
-    technologies: ['Java', 'Spring Boot', 'MySQL', 'Docker']
+    link: 'https://github.com/delsinx/My_Portifolio-main',
+    description: 'Portfólio moderno e responsivo para exibir seus projetos com eficiência.',
+    technologies: ['React', 'Tailwind', 'Java Script', 'html5 & css3']
   },
   { 
-    title: 'Sistema de Gestão', 
+    title: 'Place holder titulo', 
     video: '/background.mp4', 
-    link: 'https://github.com/delsinx/project2',
-    description: 'Sistema de gestão empresarial com microserviços, cache distribuído e alta disponibilidade.',
-    technologies: ['Java', 'Spring Cloud', 'Redis', 'PostgreSQL']
+    link: 'place holder-link',
+    description: 'Place holder descrição',
+    technologies: ['Place holder tecnologias']
   },
   { 
-    title: 'API de Analytics', 
+    title: 'Place holder titulo', 
     video: '/background.mp4', 
-    link: 'https://github.com/delsinx/project3',
-    description: 'API para processamento de dados em tempo real com Apache Kafka e análise de métricas.',
-    technologies: ['Java', 'Kafka', 'MongoDB', 'Elasticsearch']
+link: 'place holder-link',
+    description: 'Place holder descrição',
+    technologies: ['Place holder tecnologias']
   },
   { 
-    title: 'Plataforma de Integração', 
+    title: 'Place holder titulo', 
     video: '/background.mp4', 
-    link: 'https://github.com/delsinx/project4',
-    description: 'Plataforma para integração de sistemas legados com APIs modernas usando padrões de design.',
-    technologies: ['Java', 'Spring Integration', 'RabbitMQ', 'Oracle']
+    link: 'place holder-link',
+    description: 'Place holder descrição',
+    technologies: ['Place holder tecnologias']
   }
 ];
 
@@ -66,7 +66,7 @@ export default function Projects() {
             {projects.map((project, i) => (
               <div
                 key={i}
-                className="bg-gray-800 bg-opacity-80 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
+                className="bg-black bg-opacity-30 rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 cursor-pointer"
                 onClick={() => setSelectedProject(project)}
               >
                 <div className="relative">
@@ -110,7 +110,7 @@ export default function Projects() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center bg-gray-800 bg-opacity-80 rounded-lg p-8">
+          <div className="text-center bg-black bg-opacity-30 rounded-lg p-8 mt-8">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
               Interessado em colaborar?
             </h2>
@@ -123,7 +123,7 @@ export default function Projects() {
                 href="https://github.com/delsinx" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300"
+                className="inline-block bg-black bg-opacity-40 hover:bg-gray-900 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2 border-white hover:text-gray-900 hover:bg-white"
               >
                 Ver mais no GitHub
               </a>
