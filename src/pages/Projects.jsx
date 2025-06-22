@@ -123,7 +123,9 @@ export default function Projects() {
                 href="https://github.com/delsinx" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-black hover:bg-gray-900 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2 border-blue-600 hover:text-blue-400 hover:bg-black"
+                className="inline-block font-semibold py-3 px-8 rounded-lg transition-all duration-300 border-2
+                  bg-transparent text-black border-black hover:bg-black hover:text-white
+                  dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white/10 dark:hover:text-white"
               >
                 Ver mais no GitHub
               </a>

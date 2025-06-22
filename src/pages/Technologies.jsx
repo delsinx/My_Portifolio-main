@@ -113,11 +113,12 @@ export default function Technologies() {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                  activeCategory === category
-                    ? 'bg-blue-600 text-white shadow-lg'
-                    : 'bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700'
-                }`}
+                className={`inline-block border-2 font-semibold px-6 py-3 rounded-lg transition-all duration-300
+                  ${
+                    activeCategory === category
+                      ? 'bg-gray-900 text-white border-gray-900 dark:bg-white dark:text-gray-900 dark:border-white'
+                      : 'bg-transparent text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-gray-900'
+                  }`}
               >
                 {category}
               </button>

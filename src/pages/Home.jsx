@@ -29,7 +29,7 @@ export default function Home() {
             <div className="space-y-4 md:space-y-0 md:space-x-6 md:flex md:justify-center">
               <Link 
                 to="/projects" 
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="inline-block bg-transparent border-2 border-gray-900 dark:border-white hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-gray-900 text-gray-900 dark:text-white font-semibold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105"
               >
                 Ver Projetos
               </Link>
@@ -82,7 +82,7 @@ export default function Home() {
                 href="https://www.udemy.com/course/java-curso-completo/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-white hover:scale-105 transition-all duration-300 block shadow-lg"
+                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-black hover:scale-105 transition-all duration-300 block shadow-lg"
                 style={{ transitionProperty: 'background, transform, box-shadow' }}
               >
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Java Completo</h3>
@@ -95,7 +95,9 @@ export default function Home() {
                   href="https://www.udemy.com/course/java-curso-completo/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300"
+                  className="inline-block mt-4 font-semibold py-2 px-6 rounded-lg transition-all duration-300 border-2
+                    bg-transparent text-black border-black hover:bg-black hover:text-white
+                    dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-gray-900"
                 >
                   Ver Curso
                 </a>
@@ -104,7 +106,7 @@ export default function Home() {
                 href="https://cursos.alura.com.br/formacao-spring-framework"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-white hover:scale-105 transition-all duration-300 block shadow-lg"
+                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-black hover:scale-105 transition-all duration-300 block shadow-lg"
                 style={{ transitionProperty: 'background, transform, box-shadow' }}
               >
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Spring Framework</h3>
@@ -117,7 +119,9 @@ export default function Home() {
                   href="https://cursos.alura.com.br/formacao-spring-framework"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300"
+                  className="inline-block mt-4 font-semibold py-2 px-6 rounded-lg transition-all duration-300 border-2
+                    bg-transparent text-black border-black hover:bg-black hover:text-white
+                    dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-gray-900"
                 >
                   Ver Curso
                 </a>
@@ -126,7 +130,7 @@ export default function Home() {
                 href="https://web.dio.me/track/formacao-sql-database-specialist"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-white hover:scale-105 transition-all duration-300 block shadow-lg"
+                className="bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-30 p-6 rounded-lg cursor-pointer hover:bg-gray-200 dark:hover:bg-black hover:scale-105 transition-all duration-300 block shadow-lg"
                 style={{ transitionProperty: 'background, transform, box-shadow' }}
               >
                 <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">Banco de Dados SQL</h3>
@@ -139,7 +143,9 @@ export default function Home() {
                   href="https://web.dio.me/track/formacao-sql-database-specialist"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block mt-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition-all duration-300"
+                  className="inline-block mt-4 font-semibold py-2 px-6 rounded-lg transition-all duration-300 border-2
+                    bg-transparent text-black border-black hover:bg-black hover:text-white
+                    dark:bg-transparent dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-gray-900"
                 >
                   Ver Curso
                 </a>
