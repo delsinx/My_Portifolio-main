@@ -402,3 +402,8 @@ export default function Contact() {
               CSS3
             </a>
           </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
