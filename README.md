@@ -157,5 +157,4 @@ O projeto foi testado em:
 - Cards padronizados
 - Formulários com validação
 
-Este projeto demonstra como transformar uma SPA em um site multi-página mantendo a responsividade e melhorando a experiência do usuário.
-
+Documentação, concerto de bugs utilizando ManusAI
